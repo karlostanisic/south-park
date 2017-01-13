@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>South park</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class='stage'>
+            <img src="images/replay-icon.png" class="replay-button">
+            <div class='sky' id="sky"></div>
+            
+            <img src='images/mountains.png' class="nature" id="nature">
+            <img src="images/tree.png" class="tree-left-1" id="tree-left-1">
+            <img src="images/tree.png" class="tree-left-2" id="tree-left-2">
+            <img src="images/tree.png" class="tree-left-3" id="tree-left-3">
+            <img src="images/tree.png" class="tree-right-3" id="tree-right-3">
+            <img src="images/tree.png" class="tree-right-2" id="tree-right-2">
+            <img src="images/tree.png" class="tree-right-4" id="tree-right-4">
+            <img src="images/tree.png" class="tree-right-1" id="tree-right-1">
+            
+            <img src='images/snow.png' class="snow" id="snow">
+            <img src="images/tree.png" class="tree-bottom" id="tree-bottom">
+            <img src="images/tree.png" class="tree-top" id="tree-top">
+            <div class="road" id="road"></div>
+            <img src='images/sign.png' class="sign" id="sign">
+            
+            <img src="images/kyle.png" class="kyle" id="kyle">
+            <img src="images/cartman-body.png" class="cartman-body" id="cartman-body">
+            <img src="images/cartman-head.png" class="cartman-head" id="cartman-head">
+            <img src="images/kenny-head.png" class="kenny-head" id="kenny-head">
+            <img src="images/kenny-body.png" class="kenny-body" id="kenny-body">
+            <img src="images/stan-body.png" class="stan-body" id="stan-body">
+            <img src="images/stan-head.png" class="stan-head" id="stan-head">
+			
+        </div>
+    <script>
+        $(window).on("load", function() {
+            
+            var snd = new Audio("sound/theme.wav"); 
+            
+            $('.stage').children().each(function() {
+                $(this).addClass('animation-options');
+            });
+            
+            $('.replay-button').click(function() {
+                $('.replay-button').hide();
+                setTimeout(function() {
+                    $('.replay-button').show();
+                }, 3500);
+                $('.stage').children().each(function() {
+                    $(this).removeClass($(this).attr('id') + '-animation');
+                    void this.offsetWidth;
+                    $(this).addClass($(this).attr('id') + '-animation');
+                    //var that = this;
+                    //setTimeout(function() {
+                        //$(that).addClass($(that).attr('id') + '-animation');
+                    //}, 1);
+                    snd.play();
+                });
+            });
+        });
+    </script>
+    </body>
+    
+</html>

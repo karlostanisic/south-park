@@ -1,0 +1,539 @@
+.replay-button {
+    position: absolute;
+    width: 100px;
+    top: 220px;
+    top: calc(50% - 50px);
+    left: 280px;
+    left: calc(50% - 50px);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.animation-options {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    
+}
+
+.stage {
+    width: 660px;
+    height: 540px;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.stan-head {
+    position: absolute;
+    width: 400px;
+    bottom: -200px;
+    left: 750px;
+}
+.stan-head-animation {
+    -webkit-animation-name: stan-head;
+            animation-name: stan-head;
+}
+@-webkit-keyframes stan-head {
+    100% {
+        width: 70px;
+        bottom: 132px;
+        left: 272px;
+    }
+}
+@keyframes stan-head {
+    100% {
+        width: 70px;
+        bottom: 132px;
+        left: 272px;
+    }
+}
+
+.stan-body {
+    position: absolute;
+    width: 70px;
+    bottom: 600px;
+    left: 270px; 
+}
+.stan-body-animation {
+    -webkit-animation-name: stan-body;
+            animation-name: stan-body;
+}
+@-webkit-keyframes stan-body {
+    100% {
+        bottom: 100px;
+    }
+}
+@keyframes stan-body {
+    100% {
+        bottom: 100px;
+    }
+}
+
+.kyle {
+    position: absolute;
+    width: 110px;
+    bottom: -120px;
+    left: 680px;
+}
+.kyle-animation {
+    -webkit-animation-name: kyle;
+            animation-name: kyle;
+}
+@-webkit-keyframes kyle {
+    100% {
+        width: 82px;
+        bottom: 100px;
+        left: 440px;
+    }
+}
+@keyframes kyle {
+    100% {
+        width: 82px;
+        bottom: 100px;
+        left: 440px;
+    }
+}
+
+.cartman-body {
+    position: absolute;
+    width: 110px;
+    bottom: 800px;
+    left: 230px;
+}
+.cartman-body-animation {
+   -webkit-animation-name: cartman-body;
+           animation-name: cartman-body; 
+}
+@-webkit-keyframes cartman-body {
+    100% {
+        width: 82px;
+        bottom: 102px;
+        left: 170px;
+    }
+}
+@keyframes cartman-body {
+    100% {
+        width: 82px;
+        bottom: 102px;
+        left: 170px;
+    }
+}
+
+.cartman-head {
+    position: absolute;
+    width: 110px;
+    bottom: 2000px;
+    left: 110px;
+}
+.cartman-head-animation {
+    -webkit-animation-name: cartman-head;
+            animation-name: cartman-head;
+}
+@-webkit-keyframes cartman-head {
+    100% {
+        width: 82px;
+        bottom: 125px;
+        left: 170px;
+    }
+}
+@keyframes cartman-head {
+    100% {
+        width: 82px;
+        bottom: 125px;
+        left: 170px;
+    }
+}
+
+.kenny-body {
+    position: absolute;
+    width: 110px;
+    bottom: -140px;
+    left: 250px;
+}
+.kenny-body-animation {
+    -webkit-animation-name: kenny-body;
+            animation-name: kenny-body;
+}
+@-webkit-keyframes kenny-body {
+    100% {
+        width: 70px;
+        bottom: 100px;
+        left: 355px;
+    }
+}
+@keyframes kenny-body {
+    100% {
+        width: 70px;
+        bottom: 100px;
+        left: 355px;
+    }
+}
+
+.kenny-head {
+    position: absolute;
+    width: 110px;
+    bottom: 600px;
+    left: 730px;
+}
+.kenny-head-animation {
+    -webkit-animation-name: kenny-head;
+            animation-name: kenny-head;
+}
+@-webkit-keyframes kenny-head {
+    100% {
+        width: 70px;
+        bottom: 125px;
+        left: 356px;
+    }
+}
+@keyframes kenny-head {
+    100% {
+        width: 70px;
+        bottom: 125px;
+        left: 356px;
+    }
+}
+
+.sky {
+    position: absolute;
+    background: #92d7e6;
+    width: 700px;
+    height: 400px;
+    top: 700px;
+    left: 500px;
+}
+.sky-animation {
+    -webkit-animation-name: sky;
+            animation-name: sky;
+}
+@-webkit-keyframes sky {
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+@keyframes sky {
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.nature {
+    position: absolute;
+    width: 700px;
+    right: 1000px;
+    bottom: 0px;
+}
+.nature-animation {
+    -webkit-animation-name: nature;
+            animation-name: nature;
+}
+@-webkit-keyframes nature {
+    100% {
+        bottom: 80px;
+        right:0;
+    }
+}
+@keyframes nature {
+    100% {
+        bottom: 80px;
+        right:0;
+    }
+}
+
+.snow {
+    position: absolute;
+    width: 700px;
+    bottom: -100px;
+}
+.snow-animation {
+    -webkit-animation-name: snow;
+            animation-name: snow;
+}
+@-webkit-keyframes snow {
+    100% {
+        bottom: 80px;
+    }
+}
+@keyframes snow {
+    100% {
+        bottom: 80px;
+    }
+}
+
+.sign {
+    position: absolute;
+    width: 250px;
+    bottom: -550px;
+    left: 180px;
+}
+.sign-animation {
+    -webkit-animation-name: sign;
+            animation-name: sign;
+}
+@-webkit-keyframes sign {
+    100% {
+        width: 80px;
+        bottom: 105px;
+        left: 90px;
+    }
+}
+@keyframes sign {
+    100% {
+        width: 80px;
+        bottom: 105px;
+        left: 90px;
+    }
+}
+
+.road {
+    position: absolute;
+    background: #49434d;
+    width: 900px;
+    height: 120px;
+    bottom: 600px;
+    left: 1000px;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+}
+.road-animation {
+    -webkit-animation-name: road;
+            animation-name: road;
+}
+@-webkit-keyframes road {
+    100% {
+        bottom: -30px;
+        left: -100px;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+@keyframes road {
+    100% {
+        bottom: -30px;
+        left: -100px;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+.tree-left-1 {
+    position: absolute;
+    width: 70px;
+    height: 120px;
+    bottom: 130px;
+    left: -100px;
+}
+.tree-left-1-animation {
+    -webkit-animation-name: tree-left-1;
+            animation-name: tree-left-1;
+}
+@-webkit-keyframes tree-left-1 {
+    100% {
+        bottom: 130px;
+        left: 170px;
+    }
+}
+@keyframes tree-left-1 {
+    100% {
+        bottom: 130px;
+        left: 170px;
+    }
+}
+
+.tree-left-2 {
+    position: absolute;
+    width: 80px;
+    height: 135px;
+    bottom: 120px;
+    left: -140px;
+}
+.tree-left-2-animation {
+    -webkit-animation-name: tree-left-2;
+            animation-name: tree-left-2;
+}
+@-webkit-keyframes tree-left-2 {
+    100% {
+        bottom: 120px;
+        left: 140px;
+    }
+}
+@keyframes tree-left-2 {
+    100% {
+        bottom: 120px;
+        left: 140px;
+    }
+}
+
+.tree-left-3 {
+    position: absolute;
+    width: 100px;
+    height: 135px;
+    bottom: 120px;
+    left: -190px;
+}
+.tree-left-3-animation {
+    -webkit-animation-name: tree-left-3;
+            animation-name: tree-left-3;
+}
+@-webkit-keyframes tree-left-3 {
+    100% {
+        bottom: 120px;
+        left: 20px;
+    }
+}
+@keyframes tree-left-3 {
+    100% {
+        bottom: 120px;
+        left: 20px;
+    }
+}
+
+.tree-bottom {
+    position: absolute;
+    width: 110px;
+    height: 155px;
+    bottom: -300px;
+    left: 180px;
+}
+.tree-bottom-animation {
+    -webkit-animation-name: tree-bottom;
+            animation-name: tree-bottom;
+}
+@-webkit-keyframes tree-bottom {
+    100% {
+        bottom: 130px;
+        left: 95px;
+    }
+}
+@keyframes tree-bottom {
+    100% {
+        bottom: 130px;
+        left: 95px;
+    }
+}
+
+.tree-top {
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    bottom: 800px;
+    left: 200px;
+}
+.tree-top-animation {
+    -webkit-animation-name: tree-top;
+            animation-name: tree-top;
+}
+@-webkit-keyframes tree-top {
+    100% {
+        bottom: 130px;
+        left: 380px;
+    }
+}
+@keyframes tree-top {
+    100% {
+        bottom: 130px;
+        left: 380px;
+    }
+}
+
+.tree-right-1 {
+    position: absolute;
+    width: 110px;
+    height: 155px;
+    bottom: 130px;
+    left: 700px;
+}
+.tree-right-1-animation {
+    -webkit-animation-name: tree-right-1;
+            animation-name: tree-right-1;
+}
+@-webkit-keyframes tree-right-1 {
+    100% {
+        bottom: 130px;
+        left: 420px;
+    }
+}
+@keyframes tree-right-1 {
+    100% {
+        bottom: 130px;
+        left: 420px;
+    }
+}
+
+.tree-right-2 {
+    position: absolute;
+    width: 90px;
+    height: 140px;
+    bottom: 115px;
+    left: 700px;
+}
+.tree-right-2-animation {
+    -webkit-animation-name: tree-right-2;
+            animation-name: tree-right-2;
+}
+@-webkit-keyframes tree-right-2 {
+    100% {
+        bottom: 115px;
+        left: 470px;
+    }
+}
+@keyframes tree-right-2 {
+    100% {
+        bottom: 115px;
+        left: 470px;
+    }
+}
+
+.tree-right-3 {
+    position: absolute;
+    width: 110px;
+    height: 120px;
+    bottom: 115px;
+    left: 700px;
+}
+.tree-right-3-animation {
+    -webkit-animation-name: tree-right-3;
+            animation-name: tree-right-3;
+}
+@-webkit-keyframes tree-right-3 {
+    100% {
+        bottom: 115px;
+        left: 495px;
+    }
+}
+@keyframes tree-right-3 {
+    100% {
+        bottom: 115px;
+        left: 495px;
+    }
+}
+
+.tree-right-4 {
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    bottom: 120px;
+    left: 700px;
+}
+.tree-right-4-animation {
+    -webkit-animation-name: tree-right-4;
+            animation-name: tree-right-4;
+}
+@-webkit-keyframes tree-right-4 {
+    100% {
+        bottom: 120px;
+        left: 600px;
+    }
+}
+@keyframes tree-right-4 {
+    100% {
+        bottom: 120px;
+        left: 600px;
+    }
+}
